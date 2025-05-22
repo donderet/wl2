@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+   
+    background: linear-gradient(to bottom right, #0d0d0d, #2a2a2a);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 90%;
+    width: 800px;
+}
+
+.content-container h1, .content-container h2, .content-container h3 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(76, 175, 80, 0.3);
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+td a {
+    color: #81D4FA;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+td a:hover {
+    text-decoration: underline;
+    color: #B3E5FC;
+}
+
+
+p a {
+     color: #81D4FA;
+     text-decoration: none;
+     font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #B3E5FC;
+}
+
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], select {
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 10px;
+    width: calc(100% - 18px);
+}
+
+button[type="button"], input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #66BB6A;
+}
+
+button[onclick*="removeOrderItem"] {
+    background-color: #F44336;
+}
+
+button[onclick*="removeOrderItem"]:hover {
+     background-color: #E57373;
+}
+
+
+form + p a {
+    display: inline-block;
+    margin-top: 15px;
+} 

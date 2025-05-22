@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+    version="4.0"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+  <display-name>Pizzeria Web Application</display-name>
+  <servlet>
+    <servlet-name>FrontController</servlet-name>
+    <servlet-class>ua.kpi.controller.FrontController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderController</servlet-name>
+    <servlet-class>ua.kpi.controller.OrderController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FrontController</servlet-name>
+    <url-pattern>/users/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderController</servlet-name>
+    <url-pattern>/orders/*</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>orders</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/error.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error.jsp</location>
+  </error-page>
+</web-app>
